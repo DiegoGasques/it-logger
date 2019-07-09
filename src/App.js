@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
+import { Provider } from "react-redux";
 
+import store from "./store";
 import SearchBar from "./components/layout/SearchBar";
 import Logs from "./components/logs/Logs";
 import AddBtn from "./components/layout/AddBtn";
@@ -18,7 +20,7 @@ function App() {
   });
 
   return (
-    <div className="App">
+    <Provider store={store}>
       <SearchBar />
       <div className="container">
         <AddBtn />
@@ -28,7 +30,7 @@ function App() {
         <TechListModal />
         <Logs />
       </div>
-    </div>
+    </Provider>
   );
 }
 
