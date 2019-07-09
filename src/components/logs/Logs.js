@@ -1,23 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
 
 import LogItem from "./LogItem";
 import Preloader from "../layout/Preloader";
 
-const Logs = () => {
-  const [logs, setLogs] = useState([]);
-  const [loading, setLoading] = useState(false);
+import { getLogs } from "../../store/actions/logs";
 
+const Logs = ({ logs, getLogs, loading }) => {
   useEffect(() => {
-    setLoading(true);
-    fetch("/logs")
-      .then(res => res.json())
-      .then(data => {
-        setLogs(data);
-        setLoading(false);
-      });
+    getLogs();
   }, []);
 
-  if (loading) return <Preloader />;
+  if (loading || logs === null) return <Preloader />;
 
   return (
     <ul className="collection with-header">
@@ -33,4 +27,12 @@ const Logs = () => {
   );
 };
 
-export default Logs;
+const mapStateToProps = state => ({
+  logs: state.logs.logs,
+  loading: state.logs.loading
+});
+
+export default connect(
+  mapStateToProps,
+  { getLogs }
+)(Logs);
