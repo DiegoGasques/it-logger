@@ -2,24 +2,17 @@
   "logs": [
     {
       "id": 1,
-      "message": "Change harddrive on workstation 005",
+      "message": "Fixed!!!!!!!",
       "attention": false,
-      "date": "03-02-2019",
-      "tech": "Sam Smith"
+      "tech": "Sam Smith",
+      "date": "2019-07-09T13:54:01.930Z"
     },
     {
       "id": 2,
-      "message": "Workstation 002 not posting",
-      "attention": true,
-      "date": "03-02-2019",
-      "tech": "John Doe"
-    },
-    {
-      "id": 3,
-      "message": "Change memory on workstation 050",
+      "message": "Another fix",
       "attention": false,
-      "date": "03-02-2019",
-      "tech": "Sara Wilson"
+      "tech": "Sara Wilson",
+      "date": "2019-07-09T13:54:31.477Z"
     }
   ],
   "techs": [
