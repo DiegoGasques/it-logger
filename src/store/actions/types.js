@@ -10,7 +10,8 @@ export const UPDATE_LOG = "UPDATE_LOG";
 export const SET_CURRENT = "SET_CURRENT";
 export const CLEAR_CURRENT = "CLEAR_CURRENT";
 
-export const SET_LOADING = "SET_LOADING";
+export const SET_LOG_LOADING = "SET_LOG_LOADING";
+export const SET_TECH_LOADING = "SET_TECH_LOADING";
 
 export const GET_TECHS = "GET_TECHS";
 export const TECHS_ERROR = "TECHS_ERROR";

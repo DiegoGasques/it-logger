@@ -1,7 +1,7 @@
 import {
   GET_LOGS,
   LOGS_ERROR,
-  SET_LOADING,
+  SET_LOG_LOADING,
   ADD_LOG,
   DELETE_LOG,
   UPDATE_LOG,
@@ -31,7 +31,7 @@ export const getLogs = () => async dispatch => {
 
 export const setLoading = () => {
   return {
-    type: SET_LOADING
+    type: SET_LOG_LOADING
   };
 };
 

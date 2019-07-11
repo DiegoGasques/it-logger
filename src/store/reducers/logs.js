@@ -1,7 +1,7 @@
 import {
   GET_LOGS,
   LOGS_ERROR,
-  SET_LOADING,
+  SET_LOG_LOADING,
   ADD_LOG,
   DELETE_LOG,
   UPDATE_LOG,
@@ -19,7 +19,7 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case SET_LOADING:
+    case SET_LOG_LOADING:
       return {
         ...state,
         loading: true
