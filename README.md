@@ -1,6 +1,6 @@
 # ITLogger
 
-> React app to track IT department tasks and issues. Uses JSON-Server as a mock backend. This is another project from my React learnings
+> React app to track IT department tasks and issues. Uses JSON-Server as a mock backend. This is another project from my React learnings on Udemy
 
 ## Usage
 
